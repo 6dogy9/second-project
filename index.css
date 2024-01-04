@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.conteiner {
+	width: 960px;
+    margin: 0 auto;
+}
+.head {
+    background-image: url(img/imagebg.png);
+    background-size: cover;
+    background-color: #FFE6D7;
+    background-repeat: no-repeat;
+}
+header {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+header img {
+    width: 200px;
+}
+header ul {
+    cursor: pointer;
+    text-wrap: nowrap;
+    align-content: center;
+    font-size: 17px;
+    color: #446381;
+    display: flex;
+    list-style: none;
+    gap: 25%;
+}
+header li {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+header li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0077cc;
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease-in-out;
+}
+header li:hover::after {
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+header a {
+    text-decoration: none;
+    color: white;
+    border-radius: 200000px;
+    background: linear-gradient(95deg, #4499D9, #4499D9, #7367BE);
+    background-size: 200% 100%;
+    background-position: 100% 100%;
+    padding: 20px;
+    align-content: center;
+    transition: background-position 800ms;
+}
+header a:hover {  
+    background-position: 0% 100%;
+    box-shadow: 0 3px 10px 0 #9b9b9b;
+}
+.box {
+    margin-top: 100px;
+    display: flex;
+    gap: 15%;
+}
+.character {
+    margin-top: 50px;
+    margin-right: 30%;
+    max-width: 200px;
+}
+.f {
+    position: relative;
+    top: 38px;
+    color: #446381;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.texbox h1 {
+    margin-top: 0;
+    padding-top: 0;
+    color: #EB8382;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+.texbox p {
+    color: #826F8C;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.texbox a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 200000px;
+    background: linear-gradient(95deg, #4499D9, #4499D9, #7367BE);
+    background-size: 200% 100%;
+    background-position: 100% 100%;
+    padding: 20px;
+    align-content: center;
+    transition: background-position 800ms;
+}
+.texbox a:hover {  
+    background-position: 0% 100%;
+    box-shadow: 0 3px 10px 0 #9b9b9b;
+}
+.texbox {
+    max-width: 425px;
+}
+.texbox img {
+    max-width: 100px;
+    position: relative;
+    left:  167px;
+}
+.chel {
+    position: relative;
+    bottom: 550px;
+    z-index: 1;
+    animation: move 0.8s linear
+}
+@keyframes move {
+    0% {
+        bottom: 40%;
+        opacity: 50%;
+    }
+}
+.zad {
+    position: relative;
+    bottom: 1100px;
+    left: 80px;
+    animation: transform 0.8s 1s  ease-in-out forwards;
+    z-index: 0;
+    transform: scale(0);
+}
+@keyframes transform {
+    from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+}
+.box1 {
+    position: absolute;
+    top: 135px;
+    right: 580px;
+}
+.box2 {
+    position: absolute;
+    top: 570px;
+    right: 150px;
+    z-index: 2;
+}
+.krest {
+    position: relative;
+    top: 70px;
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+.character img {
+    border: none !important;
+    outline: none !important;
+    user-select: none !important;
+}
+
