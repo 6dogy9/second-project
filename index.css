@@ -299,7 +299,7 @@ header ul {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 100px;
-    padding-bottom: 140px;
+    padding-bottom: 130px;
     height: 440px;
     overflow: hidden;
     display: flex;
@@ -333,6 +333,7 @@ header ul {
 }
 .third-selection-img {
     position: relative;
+    
 }
 .third-selection-img-bg-gamepad {
     position: relative;
@@ -392,4 +393,203 @@ header ul {
     height: 315px;
     z-index: 2;
     animation: upDownAnimation 4s ease-in-out infinite;
+}
+.end-selection {
+   background-color: #FAEADD;
+   padding: 50px 0;
+   padding-bottom: 0 ;
+}
+.end-selection-texbox {
+    font-family: sans-serif;
+    text-align: center;
+}
+.end-selection-texbox h3 {
+    font-size: 21px;
+    color: #446381;
+    margin: 0;
+}
+.end-selection-texbox h1 {
+    color: #EB8382;
+    font-size: 68px;
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+}
+.end-selection-cards {
+    margin: auto;
+    margin-top: 85px;
+    list-style: none;
+    font-family: sans-serif;
+    display: flex;
+    gap: 50px;
+}
+.end-selection-card-1 {
+    border-radius: 20px;
+    background: #FBDACF;
+    padding: 36px 32px 32px 32px;
+    width: 230px;
+}
+.end-selection-card-1 h2 {
+    color: #446381;
+    margin: 0 0 40px;
+    font-weight: 700;
+    font-size: 32px;
+}
+.end-selection-card-1 h1 {
+    color: #EB8382;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.end-selection-card-1 h1 span {
+    color: #EB8382;
+    font-size: 18px;
+}
+.end-selection-card-1 h1 span-1 {
+    color: #EB8382;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+.end-selection-card-1 ul {
+    color: #826F8C;
+    list-style: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.end-selection-card-1 li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.end-selection-card-1 li::before {
+    background-image: url(img/Vector.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 13px;
+    height: 10px;
+    transform: translateY(-50%);
+}
+.botton-2 {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    border-radius: 200000px;
+    background: linear-gradient(95deg, #4499D9, #4499D9, #7367BE);
+    background-size: 200% auto;
+    padding: 15px 21px;
+    transition: background-position 800ms;
+    margin-top: 30px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-selection-card-2 {
+    border-radius: 20px;
+    background: url(img/Union.png), linear-gradient( #446381, #826F8C);
+    padding: 56px 32px 52px 32px;
+    width: 230px;
+    position: relative;
+    bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.end-selection-card-2 h2 {
+    color: #ffffff;
+    margin: 0 0 40px;
+    font-weight: 700;
+    font-size: 32px;
+}
+.end-selection-card-2 h1 {
+    color: #EB8382;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.end-selection-card-2 h1 span {
+    color: #EB8382;
+    font-size: 18px;
+}
+.end-selection-card-2 h1 span-1 {
+    color: #EB8382;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+.end-selection-card-2 ul {
+    color: #ffffff;
+    list-style: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.end-selection-card-2 li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.end-selection-card-2 li::before {
+    background-image: url(img/Vector2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 13px;
+    height: 10px;
+    transform: translateY(-50%);
+}
+.div {
+    transform: scale(1.2);
+    margin-left: 100px;
+}
+footer {
+    margin-top: 100px;
+    border-top: 1px #826f8c solid;
+    padding: 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img {
+    height: 55px;
+    cursor: pointer;    
+}
+.footer-content p {
+    font-family: sans-serif;
+    color: #826F8C;
+    font-size: 16px;
+}
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.footer-content li {
+    border-radius: 50%;
+    background-color: #FBDACF;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    transition: all 800ms;
+}
+.footer-content li:hover {
+    background-color: #826f8c;
+}
+.footer-content li:hover img {
+    filter: brightness(0) invert(1);
 }
